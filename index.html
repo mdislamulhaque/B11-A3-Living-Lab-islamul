@@ -1,12 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Browse4Pets</title>
+    <!-- font adlamdisplay and sora link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome link -->
+    <script
+      src="https://kit.fontawesome.com/2c0b5df642.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- tailwindcss cdn link -->
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- custom css link -->
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <h1 class="text-red-500">hello</h1>
+    <header>
+      <!-- mobile nav -->
+      <nav id="mobile-nav" class="py-4 bg-[#FFF9F4] lg:hidden">
+        <div class="flex justify-between items-center mx-4">
+          <img class="w-12 h-12" src="./c1-assets/logo-header.png" alt="" />
+          <i class="fa-solid fa-bars text-3xl"></i>
+        </div>
+      </nav>
+      <!-- desktop nav -->
+      <nav
+        id="desktop-nav"
+        class="justify-between items-center py-4 px-16 bg-[#FFF9F4] hidden md:hidden lg:flex"
+      >
+        <div class="flex items-center gap-3">
+          <img src="./c1-assets/logo-header.png" alt="" />
+          <h1 class="font-secondary text-2xl">
+            Browses<span class="text-[#FFDC26]">4</span>Pets
+          </h1>
+        </div>
+        <div>
+          <ul class="flex gap-6 font-secondary text-xl">
+            <li><a href="">Find a pet</a></li>
+            <li><a href="">Breeds</a></li>
+            <li><a href="">Contact us</a></li>
+          </ul>
+        </div>
+        <div>
+          <button
+            class="px-8 py-2 border border-[#FFDC26] rounded-xl hover:bg-[#FFDC26] transition-all duration-500"
+          >
+            Login
+          </button>
+          <button
+            class="px-8 py-2 ms-2 bg-[#FFDC26] border border-[#FFDC26] rounded-xl hover:bg-[#FFF] transition-all duration-500"
+          >
+            Register
+          </button>
+        </div>
+      </nav>
+    </header>
   </body>
 </html>

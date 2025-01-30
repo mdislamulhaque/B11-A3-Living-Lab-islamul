@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
+#mobile-nav {
+  border-bottom: 1px solid black;
+}
+
+.font-primary {
+  font-family: "ADLaM Display", serif;
+}
+
+.font-secondary {
+  font-family: "Sora", serif;
+}
