@@ -21,6 +21,13 @@
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <!-- custom css link -->
     <link rel="stylesheet" href="./style.css" />
+    <style type="text/tailwindcss">
+      @theme {
+        --font-sora: Sora, sans-serif;
+        --font-adlam: ADLaM Display, serif;
+        --color-primary: #ffdc26;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -68,34 +75,11 @@
         </div>
       </nav>
       <!-- banner -->
-      <!-- <section
-        class="mx-4 lg:mx-36 my-4 lg:my-20 p-2 overflow-hidden relative md:h-[80vh]"
-      >
-        <div class="md:h-full">
-          <img class="w-full md:h-full" src="./c1-assets/cat-big.png" alt="" />
-        </div>
-        <div class="w-2/3 space-y-2 md:space-y-6 absolute inset-0">
-          <h1 class="font-primary md:text-2xl lg:text-6xl">
-            Pamper Your Pet, Because They Deserve the Bes
-          </h1>
-          <p class="font-secondary text-xs md:text-sm lg:text-2xl">
-            Discover a world of treats, toys, and essentials handpicked for your
-            furry friends. Shop now and make tails wag with joy!
-          </p>
-          <button
-            class="px-2 md:px-10 py-0.5 md:py-2 bg-[#FFDC26] rounded-lg text-xs md:text-xl font-secondary"
-          >
-            Find a pet
-          </button>
-        </div>
-      </section> -->
-
-      <!-- featured pets -->
       <section
         class="bg-[url('./c1-assets/cat-big.png')] h-64 mx-10 lg:mx-32 lg:h-[80vh] bg-contain bg-right-bottom bg-no-repeat"
       >
         <div class="w-1/2 space-y-2 md:space-y-6 mt-12">
-          <h1 class="font-primary md:text-2xl lg:text-6xl">
+          <h1 class="font-adlam text-clifford md:text-2xl lg:text-6xl">
             Pamper Your Pet, Because They Deserve the Bes
           </h1>
           <p class="font-secondary text-xs md:text-sm lg:text-2xl">
@@ -103,7 +87,7 @@
             furry friends. Shop now and make tails wag with joy!
           </p>
           <button
-            class="px-2 md:px-10 py-0.5 md:py-2 bg-[#FFDC26] rounded-lg text-xs md:text-xl font-secondary"
+            class="px-2 md:px-10 py-0.5 md:py-2 bg-primary rounded-lg text-xs md:text-xl font-secondary"
           >
             Find a pet
           </button>
