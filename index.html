@@ -76,7 +76,7 @@
       </nav>
       <!-- banner -->
       <section
-        class="bg-[url('./c1-assets/cat-big.png')] h-64 mx-10 lg:mx-32 lg:h-[80vh] bg-contain bg-right-bottom bg-no-repeat"
+        class="bg-[url('./c1-assets/cat-big.png')] h-64 mx-10 lg:mx-32 lg:h-[80vh] bg-contain bg-right-bottom bg-no-repeat animate-pulse"
       >
         <!-- banner content -->
         <div class="w-7/12 space-y-2 md:space-y-6 mt-12">
@@ -94,7 +94,8 @@
           </button>
         </div>
       </section>
-
+    </header>
+    <main>
       <!-- catagories -->
 
       <section class="mx-12 md:mx-24 lg:mx-36 py-12 md:py-24 lg:py-32">
@@ -176,8 +177,10 @@
             class="bg-[#F9DF8A] rounded-xl p-6 relative h-[416px] col-span-3 lg:col-span-1"
           >
             <div class="space-y-2 md:pt-16">
-              <h2 class="font-adlam text-3xl">T-Shirt For Dogs</h2>
-              <p>
+              <h2 class="font-adlam text-3xl md:text-6xl lg:text-4xl">
+                T-Shirt For Dogs
+              </h2>
+              <p class="font-sora text-xl lg:text-sm">
                 Discover a world of treats, toys, and essentials handpicked for
               </p>
               <button class="px-4 py-1 text-xl rounded-lg bg-white">
@@ -310,6 +313,148 @@
           </div>
         </div>
       </section>
-    </header>
+      <!-- custom section -->
+      <section
+        class="bg-gradient-to-r from-blue-200 to-purple-200 py-12 px-6 md:px-16 flex flex-col md:flex-row items-center justify-between"
+      >
+        <div class="text-center md:text-left max-w-lg">
+          <h1 class="text-4xl md:text-5x font-adlam font-bold text-gray-900">
+            Find Your Perfect Pet Companion
+          </h1>
+          <p class="mt-4 text-lg text-gray-700 font-sora">
+            Adopt, love, and cherish a pet today! We offer the best care,
+            grooming, and adoption services for your furry friends.
+          </p>
+          <button
+            class="mt-6 bg-primary px-6 py-3 rounded-full shadow-lg transition font-sora"
+          >
+            Explore Now
+          </button>
+        </div>
+
+        <div class="mt-8 md:mt-0">
+          <img
+            src="./c1-assets/cute-pet-mid.png"
+            alt="Cute Pet"
+            class="w-full max-w-md rounded-xl shadow-lg"
+          />
+        </div>
+      </section>
+      <!-- price -->
+      <section class="p-16 lg:p-[100px] pb-[300px] md:pb-[200px]">
+        <h2 class="font-adlam text-4xl">Everyday low Price</h2>
+        <div class="mt-10 grid lg:grid-cols-3 gap-6">
+          <!-- == -->
+          <div
+            class="flex justify-between md:items-center bg-[linear-gradient(to_right,rgba(248,204,251,0.8),rgba(172,210,253,0.5))] rounded-lg lg:col-span-2 pb-4"
+          >
+            <div class="ps-4 md:ps-14 md:pt-14 space-y-2 absolute">
+              <p class="font-sora text-xl hidden md:block">Under Price</p>
+              <h3 class="font-adlam text-2xl md:text-3xl">Pet Grooming Mitt</h3>
+              <p class="font-adlam text-white text-2xl hidden md:block">
+                (Easy Hair Removal)
+              </p>
+              <h2
+                class="font-adlam text-4xl md:text-6xl text-white md:text-black"
+              >
+                $7.99
+              </h2>
+            </div>
+            <div class="flex justify-end items-end">
+              <img
+                class="md:ml-[450px] mt-8"
+                src="./c1-assets/cute-dog-mid.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- == -->
+          <div
+            class="flex bg-[linear-gradient(to_right,rgba(255,249,244,0.8),rgba(249,223,138,0.5))] rounded-lg py-8 relative"
+          >
+            <div class="ps-2 md:ps-6 md:pt-1 space-y-2">
+              <h2 class="font-adlam text-2xl md:text-4xl absolute">
+                T-Shirt for Dogs
+              </h2>
+              <p class="font-adlam text-4xl md:text-6xl text-primary mt-12">
+                $7.99
+              </p>
+            </div>
+            <div class="flex justify-end items-end">
+              <img class="ms-8" src="./c1-assets/cute-pet-mid.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <section class="bg-[#ffdb2692] p-16 lg:p-[140px] mt-[100px] relative">
+      <!-- card positon -->
+      <div
+        class="bg-[#FFF9F4] rounded-lg text- md:flex md:justify-evenly md:items-center absolute top-[-30%] md:-top-40 left-[10%] w-[80%]"
+      >
+        <div class="p-4">
+          <img
+            class="text-center inline-block"
+            src="./c1-assets/cute-pet-small.png"
+            alt=""
+          />
+        </div>
+        <div class="space-y-4 p-4">
+          <h2 class="font-adlam text-4xl">Get Pawsome News!</h2>
+          <p class="font-sora text-xl">
+            Exclusive training tips, ticks, product deals and more.
+          </p>
+          <input
+            type="email"
+            name=""
+            id=""
+            placeholder="Enter email"
+            class="bg-white p-2 rounded-lg w-[80%] py-3"
+          />
+          <br />
+          <button
+            class="px-8 py-2 ms-2 bg-[#FFDC26] border border-[#FFDC26] rounded-xl hover:bg-[#FFF] transition-all duration-500 cursor-pointer"
+          >
+            Subcribe
+          </button>
+        </div>
+      </div>
+      <!-- footer container -->
+      <div
+        class="space-y-4 md:flex md:justify-between md:items-center mt-[120%] sm:mt-[80%] md:mt-24"
+      >
+        <div>
+          <div class="flex items-center space-y-4 gap-4">
+            <img src="./c1-assets/logo-footer.png" alt="" />
+            <h1 class="font-secondary text-2xl">
+              Browses<span class="text-[#FFDC26]">4</span>Pets
+            </h1>
+          </div>
+          <p class="font-sora">
+            Discover a world of treats, toys, and <br />
+            essentials handpicked for your furry <br />
+            friends
+          </p>
+        </div>
+        <div>
+          <ul class="font-secondary text-xl space-y-4">
+            <li><a href="">Find a pet</a></li>
+            <li><a href="">Breeds</a></li>
+            <li><a href="">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="space-y-4">
+          <p>Follow Us</p>
+          <div class="space-x-4">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========================= -->
   </body>
 </html>
